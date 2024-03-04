@@ -59,3 +59,6 @@ SELECT
   TOP (50) PERCENT * 
 FROM 
   eurovision;
+
+
+  
