@@ -1,3 +1,4 @@
+
 -- 1.SELECT the country column FROM the eurovision table.
 SELECT country
 FROM eurovision;
@@ -21,5 +22,37 @@ FROM
 -- Return unique countries and use an alias
 SELECT 
   DISTINCT country AS unique_country 
+FROM 
+  eurovision;
+
+--Exercise-2
+--...........
+
+-- 1.
+-- SELECT the country and event_year columns from the eurovision table.
+
+-- Select country and event_year from eurovision
+
+SELECT 
+  country, 
+  event_year 
+FROM 
+  eurovision;
+
+-- 2.
+-- Use a shortcut to amend the current query, returning ALL columns in the table.
+
+-- Amend the code to select all columns
+SELECT 
+ *
+FROM 
+  eurovision;
+
+-- 3.
+-- This time, return only half the rows using 'TOP', using the same shortcut as before to return all columns.
+
+-- Return all columns, restricting the percent of rows returned
+SELECT 
+  TOP (50) PERCENT * 
 FROM 
   eurovision;
