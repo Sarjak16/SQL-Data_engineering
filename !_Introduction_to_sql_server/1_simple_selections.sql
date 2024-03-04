@@ -1,3 +1,6 @@
+-- Exercise1:
+-- .............
+
 
 -- 1.SELECT the country column FROM the eurovision table.
 SELECT country
