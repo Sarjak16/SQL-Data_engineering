@@ -1,3 +1,5 @@
+--ORDER BY................................
+
 -- Select description and event_date from grid. Your query should return the first 5 rows, ordered by event_date.
 -- Select the first 5 rows from the specified columns
 SELECT 
@@ -11,6 +13,7 @@ ORDER BY
 
 
 -- Modify your code based on the comments provided on the right.
+
 -- Select the top 20 rows from description, nerc_region and event_date
 SELECT 
   TOP (20) description,
@@ -24,3 +27,5 @@ ORDER BY
   nerc_region,
   affected_customers,
   event_date DESC;
+
+--Where.......................
