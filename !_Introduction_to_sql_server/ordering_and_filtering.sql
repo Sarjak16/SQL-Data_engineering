@@ -28,4 +28,15 @@ ORDER BY
   affected_customers,
   event_date DESC;
 
---Where.......................
+-- --Where.......................
+-- Select the description and event_year columns.
+-- Return rows WHERE the description is 'Vandalism'.
+-- Select description and event_year
+SELECT 
+  description, 
+  event_year 
+FROM 
+  grid 
+  -- Filter the results
+WHERE 
+  description = 'Vandalism';
