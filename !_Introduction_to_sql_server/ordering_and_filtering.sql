@@ -40,3 +40,4 @@ FROM
   -- Filter the results
 WHERE 
   description = 'Vandalism';
+
