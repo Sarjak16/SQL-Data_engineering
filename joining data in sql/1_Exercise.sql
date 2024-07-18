@@ -42,3 +42,12 @@ INNER JOIN economies AS e
 
 -- Match on code field using table aliases
 ON c.code = e.code;
+
+-- 5:
+-- Use the country code field to complete the INNER JOIN with USING; do not change any alias names.
+-- =>
+SELECT c.name AS country, l.name AS language, official
+FROM countries AS c
+INNER JOIN languages AS l
+-- Match using the code column
+USING (code)
