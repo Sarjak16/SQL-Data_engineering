@@ -37,6 +37,10 @@ ORDER BY language;
 -- ORDER BY country;
 
 
+
+
+
+--where clause----------------------
 -- 1
 -- Select the nerc_region and demand_loss_mw columns, limiting the results to those where affected_customers is greater than or equal to 500000 (500,000)
 
@@ -78,3 +82,6 @@ WHERE
    -- Define the order   
 ORDER BY 
   event_date DESC;
+-----------------------------------------------------------------------------------------------
+
+
