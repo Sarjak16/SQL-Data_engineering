@@ -49,6 +49,8 @@ ON c.code = p.country_code;
 
 
 
+-- Chain another inner join to your query with the economies table AS e, using code.
+-- Select name, and using table aliases, select year and unemployment_rate from the economies table.
 
 SELECT name, e.year, unemployment_rate, fertility_rate
 FROM countries AS c
