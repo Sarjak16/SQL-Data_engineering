@@ -36,3 +36,22 @@ ORDER BY language;
 -- USING(code)
 -- ORDER BY country;
 
+
+-- 1
+-- Select the nerc_region and demand_loss_mw columns, limiting the results to those where affected_customers is greater than or equal to 500000 (500,000)
+
+-- Select nerc_region and demand_loss_mw
+SELECT 
+  nerc_region, 
+  demand_loss_mw 
+FROM 
+  grid 
+-- Retrieve rows where affected_customers is >= 500000  (500,000)
+WHERE 
+ affected_customers >= 500000 ;
+ 
+-- 2
+-- Select the description and affected_customers columns, returning records where the event_date was the 22nd December, 2013.
+
+-- 3
+-- Limit the results to those where the affected_customers is BETWEEN 50000 and 150000, and order in descending order of event_date.
