@@ -52,6 +52,15 @@ WHERE
 
 -- 2
 -- Select the description and affected_customers columns, returning records where the event_date was the 22nd December, 2013.
+-- Select description and affected customers
+SELECT 
+  description, 
+  affected_customers 
+FROM 
+  grid 
+  -- Retrieve rows where the event_date was the 22nd December, 2013    
+WHERE 
+  event_date = '2013-12-22';
 
 -- 3
 -- Limit the results to those where the affected_customers is BETWEEN 50000 and 150000, and order in descending order of event_date.
