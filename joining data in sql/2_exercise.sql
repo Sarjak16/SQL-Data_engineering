@@ -49,9 +49,23 @@ FROM
 -- Retrieve rows where affected_customers is >= 500000  (500,000)
 WHERE 
  affected_customers >= 500000 ;
- 
+
 -- 2
 -- Select the description and affected_customers columns, returning records where the event_date was the 22nd December, 2013.
 
 -- 3
 -- Limit the results to those where the affected_customers is BETWEEN 50000 and 150000, and order in descending order of event_date.
+-- Select description, affected_customers and event date
+SELECT 
+  description, 
+  affected_customers,
+  event_date
+FROM 
+  grid 
+  -- The affected_customers column should be >= 50000 and <=150000   
+WHERE 
+  affected_customers BETWEEN 50000
+  AND 150000 
+   -- Define the order   
+ORDER BY 
+  event_date DESC;
