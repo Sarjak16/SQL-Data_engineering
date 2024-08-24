@@ -170,3 +170,18 @@ ORDER BY avg_gdp DESC
 -- Return only first 10 records
 LIMIT 10;
 
+
+
+--------------------------------------------------------------------------------------------------
+-- Modify this query to use RIGHT JOIN instead of LEFT JOIN
+    --SELECT countries.name AS country, languages.name AS language, percent
+    -- FROM countries
+    -- LEFT JOIN languages
+    -- USING(code)
+    -- ORDER BY language;
+
+SELECT countries.name AS country, languages.name AS language, percent
+FROM languages
+RIGHT JOIN countries
+USING(code)
+ORDER BY language;
