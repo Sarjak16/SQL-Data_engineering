@@ -33,7 +33,7 @@ ORDER BY code DESC;
 
 
 -- FULL JOIN
-
+-- 1.
 -- Perform a full join with countries (left) and currencies (right).
 -- Filter for the North America region or NULL country names.
 SELECT name AS country, code, region, basic_unit
@@ -44,5 +44,19 @@ USING (code)
 -- Where region is North America or name is null
 WHERE region='North America'
 OR name IS NULL
+ORDER BY region;
+
+
+-- --2.
+-- Repeat the same query as before, turning your full join into a left join with the currencies table.
+-- Have a look at what has changed in the output by comparing it to the full join result.
+
+SELECT name AS country, code, region, basic_unit
+FROM countries
+-- Join to currencies
+LEFT JOIN currencies 
+USING (code)
+WHERE region = 'North America' 
+	OR name IS NULL
 ORDER BY region;
 
