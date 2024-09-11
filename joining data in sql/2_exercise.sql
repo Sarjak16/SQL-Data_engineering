@@ -185,3 +185,4 @@ FROM languages
 RIGHT JOIN countries
 USING(code)
 ORDER BY language;
+
